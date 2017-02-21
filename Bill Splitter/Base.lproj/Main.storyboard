@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WXF-tS-CLx">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="wEl-Yi-JKI">
+                                <rect key="frame" x="14" y="88" width="347" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQL-d6-Oml">
+                                <rect key="frame" x="155.5" y="138" width="64" height="30"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateSplitAmount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nSJ-W4-QTO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgE-Xb-YQR">
+                                <rect key="frame" x="16" y="198" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wEl-Yi-JKI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1iR-fZ-xZ7"/>
+                            <constraint firstItem="WXF-tS-CLx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="4Ad-ib-ncZ"/>
+                            <constraint firstItem="WXF-tS-CLx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DiH-h5-xdp"/>
+                            <constraint firstItem="uQL-d6-Oml" firstAttribute="top" secondItem="wEl-Yi-JKI" secondAttribute="bottom" constant="20" id="Pzl-55-wYo"/>
+                            <constraint firstItem="WXF-tS-CLx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VAb-L0-ZIq"/>
+                            <constraint firstItem="WXF-tS-CLx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VfC-J4-kQi"/>
+                            <constraint firstItem="FgE-Xb-YQR" firstAttribute="top" secondItem="uQL-d6-Oml" secondAttribute="bottom" constant="30" id="bH7-bf-xwQ"/>
+                            <constraint firstItem="wEl-Yi-JKI" firstAttribute="top" secondItem="WXF-tS-CLx" secondAttribute="bottom" constant="30" id="eBT-2h-QQb"/>
+                            <constraint firstItem="FgE-Xb-YQR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fLs-GP-lss"/>
+                            <constraint firstItem="FgE-Xb-YQR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oNB-dV-ROO"/>
+                            <constraint firstItem="uQL-d6-Oml" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="upO-Hn-I2X"/>
+                            <constraint firstItem="wEl-Yi-JKI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vdU-FR-bQT"/>
+                            <constraint firstItem="wEl-Yi-JKI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zcf-AE-2Ha"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="billTextField" destination="WXF-tS-CLx" id="Hyd-Cw-17C"/>
+                        <outlet property="splitAmountLabel" destination="FgE-Xb-YQR" id="VVb-6U-aqq"/>
+                        <outlet property="splitterSlider" destination="wEl-Yi-JKI" id="5NB-lr-F3i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
